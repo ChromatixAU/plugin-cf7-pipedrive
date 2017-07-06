@@ -342,17 +342,6 @@ class Cf7_Pipedrive {
 							</td>
 						</tr>
 
-
-						<tr>
-							<th scope="row"><label for="cf7_pipedrive_form"><?php _e( 'Contact Form 7', 'cf7-pipedrive' );?></label><br/><small>Select the Contact Forms you want to send a deal on submission.</small></label></th>
-							<td>
-								<?php foreach ( $this->cf7_forms as $form_id => $form_title ): ?>
-								<input type="checkbox" name="cf7_pipedrive_forms[]" value="<?php echo $form_id; ?>" <?php if(in_array($form_id, $this->cf7_pipedrive_forms)) echo 'checked="checked"';?> ><label for="<php echo $form_title; ?>"><?php echo $form_title; ?></label><br>
-								<?php endforeach;?>
-							</td>
-						</tr>
-
-		
 						<tr>
 							<th scope="row"><label for="cf7_pipedrive_stage"><?php _e( 'Stage', 'cf7-pipedrive' );?></label><br/><small>Select the stage you want the customer to be placed in.</small></label></th>
 							<td>
@@ -383,7 +372,7 @@ class Cf7_Pipedrive {
 				</div>
 			</form>
 			<?php
-			$plugin_basename = plugin_basename( plugin_dir_path( __FILE__ ) );
+				$plugin_basename = plugin_basename( plugin_dir_path( __FILE__ ) );
 			?>
 		</div>
 		<?php
@@ -526,7 +515,7 @@ class Cf7_Pipedrive {
 
 		// main data about the deal. person_id and org_id is added later dynamically
 		$this->deal = array(
-			'title' => ( '' !== $pipedrive_fields['title-pipedrive'] ? $pipedrive_fields['title-pipedrive'] : 'No Message Sent with Free Demo Request' ),
+			'title' => ( '' !== $pipedrive_fields['title-pipedrive'] ? $pipedrive_fields['title-pipedrive'] : '' ),
 			'stage_id' => ( null !== $this->cf7_pipedrive_stage ? $this->cf7_pipedrive_stage : '' ),
 			'user_id' => ( null !== $this->cf7_pipedrive_user ? $this->cf7_pipedrive_user : '' ),
 		);

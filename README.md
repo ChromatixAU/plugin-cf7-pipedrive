@@ -1,6 +1,7 @@
 # CF7 - Pipedrive Integration Plugin
 
-This is a fork of: [CF7 Pipedrive Deal on Submit](). It is a minimal plugin that creates a Pipedrive Deal using the form information when a Contact form 7 form is successfully submitted. Enter your API key and the forms you want Deals submitted for and you're done.
+This is a fork of: [CF7 Pipedrive Deal on Submit](https://github.com/quesihealy/cf7-pipedrive).
+It is a minimal plugin that creates a Pipedrive Deal using the form information when a Contact form 7 form is successfully submitted. Enter your API key and the forms you want Deals submitted for and you're done.
 
 ## Installation
 
