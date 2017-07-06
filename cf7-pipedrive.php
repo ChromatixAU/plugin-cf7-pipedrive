@@ -1,6 +1,6 @@
 <?php
 /**
- * Sticky Popup main plugin file
+ * CF7 Pipedrive plugin file - entry point
  *
  * @package   Cf7_Pipedrive
  * @author    Lucas Healy <lucasbhealy@gmail.com>
